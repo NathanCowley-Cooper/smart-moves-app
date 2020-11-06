@@ -1,0 +1,23 @@
+@import'./../vars';
+
+.progress{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    
+    h1{
+        font-size: 35px;
+        font-weight: 300;
+        color: $brand-blue;
+        margin: 0% 15%;
+        text-align: center;
+    }
+}
+  
+.progressLogo{
+    margin-bottom: 5%;
+    height:200px;
+    width:200px;
+}

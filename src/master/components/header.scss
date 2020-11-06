@@ -1,0 +1,61 @@
+@import'./../vars';
+
+#header{
+  background: $brand-blue;
+  height: 70px;
+  box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  border-radius: 15px 15px 0 0;
+  display: grid;
+}
+
+#header2{
+  background: $brand-blue;
+  height: 70px;
+  box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  border-radius: 15px 15px 0 0;
+  display: grid;
+  h4{
+    font-size: 14px;
+    color:white;
+    text-transform: uppercase;
+    text-align: center;
+    height: fit-content;
+    align-self: center;
+  }
+}
+
+.headerIcon{
+  height: 60px;
+  width:auto;
+  margin: 5px;
+  justify-self: center;
+}
+
+.backButton{
+  position: absolute;
+  height:70px;
+  width:70px;
+  left: 0;
+  top: 0;
+  z-index: 20;
+}
+
+.backButtonTwo{
+  position: absolute;
+  height:40px;
+  width:40px;
+  margin:3%;
+  left: 0;
+  top: 0;
+  z-index: 20;
+  background-color: $brand-blue;
+  border-radius: 50%;
+}

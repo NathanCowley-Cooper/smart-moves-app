@@ -1,0 +1,64 @@
+// Variables
+@import './../vars';
+
+.createAccount{
+    display:grid;
+    justify-items: center;
+    grid-template-rows: auto auto;
+    justify-items: center;
+    height:100%;
+    width:100%;
+}
+
+#form-create-account{
+    margin-top: 5%;
+    padding:5%;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    height:fit-content;
+    border-radius: 15px;
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
+    z-index: 10;
+
+    .input{
+        border-width: 0px 0px 1px 0px; 
+        border-color: $dark-grey;
+        border-radius: 0;
+        text-align: left;
+        height: 40px;
+        &:active{
+            border-color: $brand-blue;
+            border-width: 0px 0px 2px 0px; 
+        }
+    }
+
+    .submit{
+        margin-top:5%;
+    }
+}
+
+.createAccountFooter{
+    position:absolute;
+    bottom:0;
+    left:0;
+    height:auto;
+    width:100%;
+    border-radius: 0 0 15px 15px;
+    z-index: 5;
+}
+
+.smallIcon{
+        height: 100px;
+        width:auto;
+        margin: 5px;
+        justify-self: center;
+}
+
+
+.test{
+    position: absolute;
+    z-index: 1000;
+}

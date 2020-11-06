@@ -1,0 +1,226 @@
+@import'./../vars';
+
+.buttons{
+    justify-self: center;
+    align-self: center;
+    width: 270px;
+    cursor: pointer;
+      
+
+    &:focus {outline:0;}
+}
+
+.menuBar{
+  button{
+    background-color: white;
+    border:none;
+    padding:0;
+    cursor: pointer;
+  
+    &:focus {outline:0;}
+  }
+}
+
+
+//Splash Button
+
+.loginPage-btn{
+    height: 50px;
+    width: 270px;
+    margin: 2.5% 0;
+    background: #FFFFFF;
+    color: $brand-blue;
+    border-radius: 100px;
+    border-width: 0;
+    font-family: $roboto;
+    font-style: normal;
+    font-weight: $bold;
+    font-size: 16px;
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+
+    &:focus {outline:0;}
+}
+
+.createPage-btn{
+    height: 50px;
+    width: 270px;
+    margin: 2.5% 0;
+    background: none;
+    border: 2px solid #FFFFFF;
+    color: white;
+    border-radius: 100px;
+    font-family: $roboto;
+    font-style: normal;
+    font-weight: $bold;
+    font-size: 16px;
+    text-transform: uppercase;
+
+    cursor: pointer;
+      &:focus {outline:0;}
+    }
+
+
+//Login Page
+.login-btn{
+  height: 50px;
+  width: 270px;
+  color: #FFFFFF;
+  background: $brand-blue;
+  border-radius: 100px;
+  border-width: 0;
+  font-family: $roboto;
+  font-style: normal;
+  font-weight: $bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+
+    &:focus {outline:0;}
+}
+
+//Login Page -- Guest Button
+.guest-btn{
+  height: 50px;
+  width: 270px;
+  color: $brand-blue;
+  background: white;
+  border-radius: 100px;
+  border: 2px solid $brand-blue;
+  font-family: $roboto;
+  font-style: normal;
+  font-weight: $bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+
+  &:focus {outline:0;}
+}
+
+//Submit Button
+.submit-btn{
+    height: 50px;
+    width: 270px;
+    color: #FFFFFF;
+    background: $brand-blue;
+    border-radius: 100px;
+    border-width: 0;
+    font-family: $roboto;
+    font-style: normal;
+    font-weight: $bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+
+    cursor: pointer;
+      
+    &:focus {outline:0;}
+}
+
+//Form Styles
+.input{
+    height: 50px;
+    width: 270px;
+    background: #FFFFFF;
+    border-radius: 100px;
+    border-width: 0;
+    font-family: Arial;
+    font-style: normal;
+    font-size: 16px;
+    text-align: center;
+    border: 2px solid $brand-blue;
+    margin-bottom: 10px;
+
+    cursor: pointer;
+      
+    &:focus {outline:0;}
+}
+
+//Splash Button
+
+.walkthrough-btn{
+  height: 50px;
+  width: 270px;
+  margin: 2.5% 0;
+  background:$brand-blue;
+  color: white;
+  border-radius: 100px;
+  border-width: 0;
+  font-family: $roboto;
+  font-style: normal;
+  font-size: 16px;
+  margin-bottom: 10%;
+  margin-top: 10%;
+
+  cursor: pointer;
+}
+
+//Timer Button
+
+.timer-btn{
+  height: 40px;
+  width: 150px;
+  margin: 3% 0;
+  background: $brand-blue;
+  color: white;
+  border-radius: 100px;
+  border-width: 0;
+  font-family: $roboto;
+  font-style: normal;
+  font-size: 16px;
+  justify-self: center;
+
+  cursor: pointer;
+
+
+  &:focus {outline:0;}
+}
+
+.timerComplete-btn{
+  height: 40px;
+  width: 150px;
+  margin: 10% 0;
+  background: $brand-blue;
+  color: white;
+  border-radius: 100px;
+  border-width: 0;
+  font-family: $roboto;
+  font-style: normal;
+  font-size: 16px;
+  justify-self: center;
+
+  cursor: pointer;
+
+
+  &:focus {outline:0;}
+}
+  
+
+//Adjustment Button
+
+.adjustment-btn{
+  height: 40px;
+  width: 250px;
+  margin: 3% 0;
+  background: $brand-blue;
+  color: white;
+  border-radius: 100px;
+  border-width: 0;
+  font-family: $roboto;
+  font-style: normal;
+  font-size: 16px;
+  justify-self: center;
+
+  position: absolute;
+  bottom:2%;
+  left:80.5px;
+
+  cursor: pointer;
+
+
+  &:focus {outline:0;}
+}

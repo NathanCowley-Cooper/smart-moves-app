@@ -1,0 +1,12 @@
+// Variables
+@import './vars';
+
+//my core
+@import 'components/components.scss';
+@import 'pages/pages.scss';
+
+
+// base
+@import 'base/app.scss';
+@import 'base/appResponsive.scss';
+@import 'base/buttons.scss';

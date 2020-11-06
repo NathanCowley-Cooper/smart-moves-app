@@ -1,0 +1,110 @@
+// Variables
+@import './../vars';
+
+.stretches {
+    position:absolute;
+    width: 100%;
+    height:auto;
+    top: 120px;
+}
+
+.ergonomicsList{
+    position:absolute;
+    width: 100%;
+    height:auto;
+    top: 120px;
+}
+
+//List Styles
+.list{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    padding:0;
+    li{
+        list-style-type: none;
+    }
+  }
+
+  .list_stretch{
+    display:grid;
+    grid-template-columns: 100%;
+    padding:0;
+    li{
+        list-style-type: none;
+    }
+  }
+
+  .imgBox{
+    background-color: #ffff;
+    filter: drop-shadow(0px 0px 6px #D3D3D2);
+    border-radius: 20px;
+    display:grid;
+    margin: 7.5%;
+    width: 85%;
+    height:auto;
+    position: relative; /* If you want text inside of it */
+    cursor: pointer;
+  }
+
+  .result_routine{
+    display:grid;
+    grid-template-columns: auto auto;
+    background-color: #ffff;
+    filter: drop-shadow(0px 0px 6px #D3D3D2);
+    border-radius: 20px;
+    margin: 5%;
+    width: 90%;
+    height:170px;
+    position: relative; /* If you want text inside of it */
+    cursor: pointer;
+    li{
+      list-style-type: none;
+    }
+  }
+  
+  .coverImage{
+    height:120px;
+    width:auto;
+    margin:15% 5%;
+    justify-self: center;
+    align-self: center;
+  }
+  
+  .coverImage_stretch{
+    width:auto;
+    height:170px;
+    object-fit:cover;
+    border-radius: 10px 0 0 10px;
+  }
+  
+  .result{
+    h5{
+        margin:2% 8%;
+        font-family: $roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        color: $dark-blue;
+      }
+}
+
+.information{
+  align-self: center;
+  h5{
+    margin:0;
+    font-family: $roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    color: $dark-blue;
+  }
+  h6{
+      margin:0;
+      font-family: $roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 2em;
+      color: $dark-grey;
+  }
+}

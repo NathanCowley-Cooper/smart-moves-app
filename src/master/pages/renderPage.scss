@@ -1,0 +1,253 @@
+@import'./../vars';
+
+.headerImage{
+    height:320px;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+    display:grid;
+    justify-items: center;
+    align-items: center;
+
+    h1{
+        font-family: $roboto;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        color: $brand-blue;
+    }
+}
+
+.headerImageStretch{
+    height:320px;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+    display:grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.ergonomicImage{
+    height:220px;
+    width:auto;
+    padding-top: 20px;
+
+}
+
+.stretchImage{
+    height:320px;
+    width:100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.ErgonomicInfo{
+    height:100%;
+    width:100%;
+    display:grid;
+    grid-template-rows: 50px auto auto auto auto auto;
+
+    h4{
+        font-family: $roboto;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        color: $brand-blue;
+        margin:5% 0 0 5%;
+    }
+}
+
+.stretchInfo{
+    height:100%;
+    width:100%;
+    display:grid;
+    grid-template-rows: 50px 50px auto auto auto auto;
+
+    h4{
+        font-family: $roboto;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        color: $brand-blue;
+        margin:5% 0 0 5%;
+    }
+
+    h1{
+        font-family: $roboto;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        color: $brand-blue;
+        text-align: center;
+    }
+
+    strong{
+        color:$brand-blue;
+    }
+}
+
+.stepRow{
+    height:min-content;
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    align-items:flex-start;
+    margin-right: 10px;
+    margin: 0;
+
+    p{
+        font-family: $roboto;
+        font-style: normal;
+        font-weight: 200;
+        font-size: 16px;
+        margin:5% 0 0 0;
+        line-height: 150%;
+        width:75%;
+    }
+
+}
+
+.stepCircle{
+    height:40px;
+    width:40px;
+    margin: 5% 5% 0 5%;
+    border-radius: 50%;
+    display:grid;
+    grid-template-columns: 100%;
+    justify-items: center;
+    align-items: center;
+    background-color: $brand-blue;
+
+    h3{
+        font-family: $roboto;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        color: white;
+        margin:0;
+    }
+}
+
+.row{
+    p{
+        font-family: $roboto;
+        font-style: normal;
+        font-weight: 200;
+        font-size: 16px;
+        margin:5%;
+        line-height: 160%;
+    }
+    strong{
+        color:$brand-blue;
+    }
+}
+
+.rowDuration{
+    p{
+        font-family: $roboto;
+        font-style: normal;
+        font-weight: 200;
+        font-size: 16px;
+        margin:10% 10% 0 10%;
+        line-height: 160%;
+    }
+    strong{
+        color:$brand-blue;
+    }
+}
+
+.rowDuration2{
+    p{
+        font-family: $roboto;
+        font-style: normal;
+        font-weight: 200;
+        font-size: 16px;
+        margin:5% 10% 0 10%;
+        line-height: 160%;
+    }
+    strong{
+        color:$brand-blue;
+    }
+}
+
+.timerHeading{
+    height:100%;
+    width:100%;
+
+    h1{
+        font-family: $roboto;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        color: $brand-blue;
+        text-align: center;
+    }
+}
+
+.rowTimer{
+    p{
+        font-family: $roboto;
+        font-style: normal;
+        font-weight: 200;
+        font-size: 16px;
+        margin:5%;
+        line-height: 160%;
+    }
+    strong{
+        color:$brand-blue;
+    }
+}
+
+.rowPurpose{
+    p{
+        font-family: $roboto;
+        font-style: normal;
+        font-weight: 200;
+        font-size: 16px;
+        margin:5% 10% 0 10%;
+        line-height: 160%;
+    }
+}
+
+.titleRow{   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:5% 5% 0 0;
+
+    .fab{
+        color: $brand-blue;
+        font-size: 1.5em;
+
+    }
+}
+
+.large{
+    font-size: 5em;
+}
+
+
+.youtubeVideo{
+    display:grid;
+    grid-template-columns: auto auto;
+
+    h4{
+        color:$brand-blue;
+        margin:0 5%;
+    }
+    p{
+        color: $medium-grey;
+        margin:2% 5%;
+    }
+}
+
+.videoThumbnail{
+    width:90%;
+    height:auto;
+    margin:5%;
+    border-radius: 5%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}

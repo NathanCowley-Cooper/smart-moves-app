@@ -1,0 +1,26 @@
+@import './../vars';
+
+.splashScreen{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    left: 0px;
+    top: 0px;
+    border-radius: $standard-border-radius;
+    background: radial-gradient(50% 50% at 50% 50%, #2CB0E7 0%, #0F87BA 100%);
+    mix-blend-mode: normal;
+    display:grid;
+    grid-template-rows: 60% 40%;
+  }
+  
+    .splashIcon{
+      display:grid;
+      width:100%;
+      height:100%;
+    }
+  
+    .Icon{
+      place-self: center;
+      height:260px;
+      width:auto;
+    }
