@@ -1,7 +1,9 @@
+//Import Components
 import React from 'react';
 import './../../dist/dist.css';
 import {NavLink} from 'react-router-dom';
 
+//Nav--Switch Between Login & Create Account
 function LoginNav() {
   
   return (
@@ -17,5 +19,5 @@ function LoginNav() {
   );
 }
 
-
+//Export Component
 export default LoginNav;

@@ -1,7 +1,9 @@
+//Import Components
 import React from 'react';
 import './../../dist/dist.css';
 import {NavLink} from 'react-router-dom';
 
+//Navigation Component
 function Nav() {
   
   return (
@@ -24,6 +26,6 @@ function Nav() {
   );
 }
 
-
+//Export Component
 export default Nav;
 

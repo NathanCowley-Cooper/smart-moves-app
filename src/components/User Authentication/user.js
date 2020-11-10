@@ -1,3 +1,4 @@
+//Set User Data
 const User = {
     props: {
         first_name: "",
@@ -9,4 +10,5 @@ const User = {
     }
   };
   
+  //Export User Component
   export { User };

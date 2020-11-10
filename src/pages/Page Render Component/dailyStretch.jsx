@@ -1,8 +1,11 @@
+//Import Controllers
 import React, {useEffect, useState} from 'react';
 import './../../dist/dist.css';
 import {Link} from 'react-router-dom';
 
+//Return Daily Stretches
 function DailyStretches() {
+  //Set getDailyStretches
   useEffect(() => {
     getDailyStretch();
   }, []);
@@ -11,7 +14,7 @@ function DailyStretches() {
 
   const getDailyStretch =  () => {
     //return a promise
-      //fetch rentals.json
+      //fetch dailyStretch.json
       fetch('https://smart-moves.herokuapp.com/api/daily')
       .then((res) => res.json())
       .then((stretches) => {
@@ -21,7 +24,7 @@ function DailyStretches() {
           console.log(stretch.stretch_name);
           list.push(
             
-            
+            // Return Daily Stretch Info
             <li key={stretch.stretch_name}>
               <Link to={`/routines/dailyStretches/${stretch._id}/info`} style={{textDecoration: 'none'}}>
                 <div className="result_stretch">
@@ -40,8 +43,10 @@ function DailyStretches() {
             );
                 
     });
+    // Set Results
     setResults(list);
     })
+    // Catch Error
     .catch((err) => {
     console.log(err);
     });
@@ -64,6 +69,7 @@ function DailyStretches() {
         </div>
 
         <ul className="list_stretches">
+          {/* Return Daily Stretches */}
             {results}
             <Link to= "/routines/dailystretches/5f605c919258f504a4067ad1/timer" class="timerLink" style={{textDecoration: 'none'}} >
                 <button className="timer-btn button" >Start Stretch</button>
@@ -74,5 +80,5 @@ function DailyStretches() {
     );
   }
 
-
+//Export Page Controller
 export default DailyStretches;

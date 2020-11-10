@@ -1,8 +1,9 @@
+//Import Components
 import React, { useEffect, useState } from "react";
 import './../../dist/dist.css';
 import {Link} from 'react-router-dom';
 
-
+//Return Office Stretch Page 
 function StretchOfficePage({match}) {
     useEffect(() => {
       console.log('match is', match.params.id)
@@ -15,21 +16,24 @@ function StretchOfficePage({match}) {
     
             setResult(stretch);
           })
+          // Catch Error
           .catch((err) => {
             console.log(err);
           });
       };
+      //Get Stretch Adjustment Info
       getStretchAdj ();
     }, [match]);
   
     const [result, setResult] = useState([]);
 
+  // Return Stretch Information
   return (
     <div className="stretchPage">
         <Link to= "/routines/5f89a323b3f43055f41a4635/info">
             <img src="/images/back.png" className="backButtonTwo" alt="Back Button"/>
         </Link>
-
+      {/* Return Stretch Data */}
       <div className="headerImageStretch">
         <img src={result.cover_image_wide} className="stretchImage" alt="Adjustment" />
       </div>
@@ -69,4 +73,5 @@ function StretchOfficePage({match}) {
   );
 }
 
+//Export Page
 export default StretchOfficePage;

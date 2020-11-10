@@ -1,11 +1,14 @@
+//Import Components
 import React from 'react';
 import './../../dist/dist.css';
 import {NavLink} from 'react-router-dom';
 
+//Home Page--Header Nav Component
 function HeaderNav() {
   
   return (
     <div className="headerNav">
+        {/*Set Active Class*/}
         <NavLink activeClassName="headerbar__link--active" to= "/home/stretches" id="headerIcons" style={{textDecoration: 'none'}}>
             <button className="stretchPage-btn button" >Stretch Routines</button>
         </NavLink>
@@ -17,5 +20,5 @@ function HeaderNav() {
   );
 }
 
-
+//Export Component
 export default HeaderNav;

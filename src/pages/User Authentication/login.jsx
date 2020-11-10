@@ -1,3 +1,4 @@
+//Import Components
 import React from 'react';
 import './../../dist/dist.css';
 import SignInUser from "./../../components/User Authentication/signInUser";
@@ -50,6 +51,7 @@ class Login extends React.Component  {
           <img src="/images/login-heading.png" className="loginHeading" alt="Icon"/>
         </div>
         
+        {/* Return Sign In Form */}
         <SignIn onSignIn={(fields) => this.onSignIn(fields)} />
         <div className="loginUser">{this.setUser}</div>
   
@@ -63,6 +65,7 @@ class Login extends React.Component  {
   }
 }
 
+// Export Page Controller
 export default Login;
 
 

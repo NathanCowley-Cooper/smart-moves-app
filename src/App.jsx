@@ -1,4 +1,4 @@
-//Import Controllers
+//Import Page Controllers
 import React, { useState, useMemo, useEffect } from "react";
 import './dist/dist.css';
 import Menu from './pages/Core Pages/menu';
@@ -7,7 +7,6 @@ import Login from './pages/User Authentication/login.jsx';
 import CreateAccount from './pages/User Authentication/createAccount.jsx';
 import Splash from './pages/Core Pages/splash';
 import Progress from './pages/Core Pages/progress';
-import Timer from './pages/Timer Pages/timer';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import StretchWalkthrough from './pages/walkthrough/stretchWalkthrough';
 import ErgonomicWalkthrough from './pages/walkthrough/ergonomicWalkthrough';
@@ -40,7 +39,7 @@ function App() {
   const [user, setUser] = useState(User.props);
 
   const providerUser = useMemo(() => ({ user, setUser }), [user, setUser]);
-
+  // Check User has Loacl Token
   useEffect(() => {
     if (localStorage.getItem("token")) {
       fetch("http://localhost:8081/api/auth/validate", {
@@ -74,7 +73,7 @@ function App() {
   }, []);
   
   return (
-    //
+    //React App Router Control
     <Router>
       <UserContext.Provider value={providerUser}>
         <div className="App">
@@ -85,7 +84,6 @@ function App() {
             <Route path="/home" component={Home} />
             <Route path="/menu" exact component ={Menu} />
             <Route path="/progress" exact component ={Progress} />
-            <Route path="/timer" exact component ={Timer} />
             <Route path="/ergonomics/:id/info" exact component ={ErgonomicPage} />
             <Route path="/routines/dailystretches/:id/info" exact component ={StretchDailyPage} />
             <Route path="/routines/officestretches/:id/info" exact component ={StretchOfficePage} />
@@ -114,5 +112,5 @@ function App() {
   );
 }
 
-
+// Export App Component
 export default App;

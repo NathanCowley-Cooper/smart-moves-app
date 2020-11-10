@@ -1,8 +1,9 @@
+//Import Components
 import React from "react";
 import { CountdownCircleTimer } from "react-countdown-circle-timer";
 import './../../dist/dist.css';
 
-
+//Render Countdown Timer
 const renderTime = ({ remainingTime }) => {
 
     if (remainingTime === 0) {
@@ -11,6 +12,7 @@ const renderTime = ({ remainingTime }) => {
 
 
   return (
+    // Set Countdown Info
     <div className="timer">
       <div className="text">Remaining</div>
       <div className="value">{remainingTime}</div>
@@ -25,6 +27,7 @@ function Timer() {
   return (
     <div className="timer">
       <div className="timer-wrapper">
+        {/* Set Countdown Time */}
         <CountdownCircleTimer
           isPlaying
           duration={30}
@@ -38,4 +41,5 @@ function Timer() {
   );
 }
 
+//Export Component
 export default Timer;

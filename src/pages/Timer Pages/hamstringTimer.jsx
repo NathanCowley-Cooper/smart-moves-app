@@ -1,9 +1,10 @@
+//Import Components
 import React, { useEffect, useState } from "react";
 import './../../dist/dist.css';
 import {Link} from 'react-router-dom';
 import Timer from './../../components/Stretch Functionality/timer';
 
-
+//Return Hamstring Stretch Timer Page
 function HamstringTimerPage({match}) {
   useEffect(() => {
     console.log('match is', match.params.id)
@@ -20,6 +21,7 @@ function HamstringTimerPage({match}) {
           console.log(err);
         });
     };
+    //Get Stretch Adjustment Info
     getStretch ();
   }, [match]);
 
@@ -31,6 +33,7 @@ return (
           <img src="/images/back.png" className="backButtonTwo" alt="Back Button"/>
       </Link>
 
+    {/* Return Stretch Data */}
     <div className="headerImageStretch">
       <img src={result.cover_image_wide} className="stretchImage" alt="Adjustment" />
     </div>
@@ -41,6 +44,7 @@ return (
       <p><strong>Duration:</strong> {result.duration}</p>
     </div>
 
+    {/* Return Countdown Timer */}
     <Timer/>
 
     <Link to= "/routines/dailystretches/5f8ea80462025a600cfa4fb7/timer" className="timerLink" style={{textDecoration: 'none'}} >
@@ -59,4 +63,5 @@ return (
   );
 }
 
+//Export Page
 export default HamstringTimerPage;

@@ -1,8 +1,11 @@
+//Import Controllers
 import React, { useEffect, useState } from "react";
 import './../../dist/dist.css';
 import { Link } from "react-router-dom";
 
+//Return Ergernomic Video
 function ErgVideoPage({ match }) {
+  //Set getErgonomicAdj
   useEffect(() => {
     console.log("match is", match.params.id);
     const getErgonomicAdj = () => {
@@ -24,12 +27,14 @@ function ErgVideoPage({ match }) {
 
   const [result, setResult] = useState({});
 
-
+  //
   useEffect(() => {
+    // Set Video URL
     if (!result.video_url) {
       return
     }
-    const ErgVideo = () => {
+    //Fetch Youtube API
+    const ErgVideo = () => {                                    //Set Video URL
       fetch(`https://youtube-rest-api.p.rapidapi.com/video?id=${result.video_url}`, {
         "method": "GET",
         "headers": {
@@ -43,6 +48,7 @@ function ErgVideoPage({ match }) {
             console.log(ergVideo);
             setVideoResult(ergVideo);
           })
+        //Catch Error
       .catch(err => {
         console.error(err);
       });
@@ -73,6 +79,7 @@ function ErgVideoPage({ match }) {
         />
         <h1>{result.ergonomic_name}</h1>
 
+        {/* Set Youtube Data */}
         <div className="youtubeVideo">
           <a href= {`https://www.youtube.com/watch?v=${videoResult.videoId}`} className="youtubeLink" style={{textDecoration: 'none'}}>
           
@@ -82,6 +89,7 @@ function ErgVideoPage({ match }) {
               className="videoThumbnail"
               alt="Video Thumbnail"
             />
+            // Return Progress Bar on Load
             : <i
             className="fas fa-spinner fa-pulse large"
             style={{ color: "#1BA2D9"}}
@@ -100,4 +108,5 @@ function ErgVideoPage({ match }) {
   );
 }
 
+//Export Page Controller
 export default ErgVideoPage;

@@ -1,9 +1,11 @@
+//Import Controllers
 import React, { useEffect, useState } from "react";
 import './../../dist/dist.css';
 import {Link} from 'react-router-dom';
 
 
 function ErgonomicPage({match}) {
+  //Set getErgonomicAdj
   useEffect(() => {
     console.log('match is', match.params.id)
     const getErgonomicAdj = () => {
@@ -15,6 +17,7 @@ function ErgonomicPage({match}) {
   
           setResult(ergonomic);
         })
+        //Catch Error
         .catch((err) => {
           console.log(err);
         });
@@ -24,13 +27,14 @@ function ErgonomicPage({match}) {
 
   const [result, setResult] = useState([]);
 
-
+  // Return Ergonomic Information
   return (
     <div className="ergonomicPage">
       <Link to= "/home/ergonomics">
             <img src="/images/back.png" className="backButtonTwo" alt="Back Button"/>
       </Link>
 
+      {/* Return Ergonomic Data */}
       <div className="headerImage">
         <img src={result.cover_image} className="ergonomicImage" alt="Adjustment" />
         <h1>{result.ergonomic_name}</h1>
@@ -70,4 +74,5 @@ function ErgonomicPage({match}) {
   );
 }
 
+//Export Page Controller
 export default ErgonomicPage;

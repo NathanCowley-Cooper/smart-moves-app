@@ -1,9 +1,10 @@
+//Import Components
 import React, { useEffect, useState } from "react";
 import './../../dist/dist.css';
 import {Link} from 'react-router-dom';
 import ShortTimer from './../../components/Stretch Functionality/shortTimer';
 
-
+//Return Side Bends Timer Page 
 function SideBendsTimerPage({match}) {
   useEffect(() => {
     console.log('match is', match.params.id)
@@ -20,6 +21,7 @@ function SideBendsTimerPage({match}) {
           console.log(err);
         });
     };
+    //Get Stretch Adjustment Info
     getStretch ();
   }, [match]);
 
@@ -31,6 +33,7 @@ return (
           <img src="/images/back.png" className="backButtonTwo" alt="Back Button"/>
       </Link>
 
+    {/* Return Stretch Data */}
     <div className="headerImageStretch">
       <img src={result.cover_image_wide} className="stretchImage" alt="Adjustment" />
     </div>
@@ -41,6 +44,7 @@ return (
       <p><strong>Duration:</strong> {result.duration}</p>
     </div>
 
+    {/* Return Countdown Timer */}
     <ShortTimer/>
 
     <Link to= "/routines/officestretches/5f9044a962025a600cfa4fbd/timer" className="timerLink" style={{textDecoration: 'none'}} >
@@ -59,4 +63,5 @@ return (
   );
 }
 
+//Export Page
 export default SideBendsTimerPage;

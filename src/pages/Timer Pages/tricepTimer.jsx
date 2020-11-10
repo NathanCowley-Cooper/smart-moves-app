@@ -1,13 +1,10 @@
+//Import Components
 import React, { useEffect, useState } from "react";
 import './../../dist/dist.css';
 import {Link} from 'react-router-dom';
 import Timer from './../../components/Stretch Functionality/timer';
 
-
-
-
-
-
+//Return Tricep Timer Page 
 function TricepTimerPage({match}) {
   useEffect(() => {
     console.log('match is', match.params.id)
@@ -24,6 +21,7 @@ function TricepTimerPage({match}) {
           console.log(err);
         });
     };
+    //Get Stretch Adjustment Info
     getStretch ();
   }, [match]);
 
@@ -35,6 +33,7 @@ return (
           <img src="/images/back.png" className="backButtonTwo" alt="Back Button"/>
       </Link>
 
+    {/* Return Stretch Data */}
     <div className="headerImageStretch">
       <img src={result.cover_image_wide} className="stretchImage" alt="Adjustment" />
     </div>
@@ -45,6 +44,7 @@ return (
       <p><strong>Duration:</strong> {result.duration}</p>
     </div>
 
+    {/* Return Countdown Timer */}
     <Timer/>
     
     
@@ -64,4 +64,5 @@ return (
   );
 }
 
+//Export Page
 export default TricepTimerPage;

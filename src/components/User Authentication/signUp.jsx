@@ -1,9 +1,11 @@
+//Import Components
 import React from 'react';
 import './../../dist/dist.css';
 import LoginNav from './../Navigation/loginNav';
 
-
+//Set Create Account Component
 class SignUp extends React.Component {
+  //Set User Data
   state = {
     first_name: "",
     last_name: "",
@@ -12,8 +14,8 @@ class SignUp extends React.Component {
     email: "",
     password: "",
     loading: false
-    
   };
+
   change = (e) => {
     this.setState({
       [e.target.name]: e.target.value
@@ -34,13 +36,16 @@ class SignUp extends React.Component {
   };
     render () {
 
+      // Set Loading state
       const { loading } = this.state;
 
         return (
+              // Render Sign Up Form
               <form action="" id="form-create-account" className = "inline-form">
                 
                   <img src="/images/icon.svg" className="smallIcon" alt="Smart Moves Icon"/>
-          
+
+                  {/* Render Nav */}
                   <LoginNav/>
 
                   <div className = "field">
@@ -103,6 +108,7 @@ class SignUp extends React.Component {
                       type="sign up"  
                       className="button submit-btn"
                       onClick={(e) => this.onSubmit(e)}
+                      //Set Progress Bar
                     >{loading && (
                     <i
                       className="fas fa-spinner fa-pulse"
@@ -118,5 +124,5 @@ class SignUp extends React.Component {
 
 }
 
-
+//Export Component
 export default SignUp;

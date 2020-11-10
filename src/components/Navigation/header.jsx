@@ -1,6 +1,8 @@
+//Import Components
 import React from 'react';
 import './../../dist/dist.css';
 
+//Render HeaderComponent
 function Header() {
   
   return (
@@ -9,5 +11,5 @@ function Header() {
     </div>
   );
 }
-
+//Export Component
 export default Header;

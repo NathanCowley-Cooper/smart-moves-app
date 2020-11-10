@@ -1,3 +1,4 @@
+//Import Components
 import React from 'react';
 import { withRouter } from "react-router-dom";
 import './../../dist/dist.css';
@@ -51,6 +52,7 @@ class CreateAccount extends React.Component {
           <img src="/images/back.png" className="backButton" alt="Back Button"/>
         </Link>
 
+        {/* Return Sign Up Form */}
         <SignUp onSignUp={(fields) => this.onSignUp(fields)}/>
 
         
@@ -61,4 +63,5 @@ class CreateAccount extends React.Component {
 
 }
 
+// Export Page Controller
 export default withRouter(CreateAccount);

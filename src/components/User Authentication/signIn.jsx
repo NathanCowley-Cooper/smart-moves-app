@@ -1,7 +1,9 @@
+//Import Components
 import React from 'react';
 import './../../dist/dist.css';
 import LoginNav from '../Navigation/loginNav.jsx';
 import {Link} from 'react-router-dom';
+
 
 class SignIn extends React.Component {
   state = {
@@ -14,6 +16,7 @@ class SignIn extends React.Component {
       [e.target.name]: e.target.value
     });
   };
+  //Subit Data
   onSubmit = (e) => {
     e.preventDefault();
     this.props.onSignIn(this.state);
@@ -34,6 +37,7 @@ class SignIn extends React.Component {
     return (
       <form action="" method="post" id="form-login" className = "inline-form">
 
+        {/* Render Nav */}
         <LoginNav/>
 
         <div className="field">
@@ -61,6 +65,7 @@ class SignIn extends React.Component {
         <div className = "row_three">
               <div className = "field">
                 <button className="login-btn button" onClick={(e) => this.onSubmit(e)} disabled={loading}>
+                {/* Set Progress Bar */}
                   {loading && (
                     <i
                       className="fas fa-spinner fa-pulse"
@@ -73,6 +78,7 @@ class SignIn extends React.Component {
         </div>
 
         <div className = "row_three">
+          {/* Render Guest Buttton */}
               <Link to= "/stretchWalkthrough">
                 <input type ="submit" value ="Continue As A Guest" className="guest-btn button"/>
               </Link>
@@ -84,5 +90,6 @@ class SignIn extends React.Component {
 
 }
 
+//Export Component
 export default SignIn;
 

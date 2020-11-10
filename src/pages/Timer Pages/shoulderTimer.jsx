@@ -1,11 +1,10 @@
+//Import Components
 import React, { useEffect, useState } from "react";
 import './../../dist/dist.css';
 import {Link} from 'react-router-dom';
 import Timer from './../../components/Stretch Functionality/timer';
 
-
-
-
+//Return Shoulder Stretch Timer Page 
 function ShoulderTimerPage({match}) {
   useEffect(() => {
     console.log('match is', match.params.id)
@@ -22,6 +21,7 @@ function ShoulderTimerPage({match}) {
           console.log(err);
         });
     };
+    //Get Stretch Adjustment Info
     getStretch ();
   }, [match]);
 
@@ -33,6 +33,7 @@ return (
           <img src="/images/back.png" className="backButtonTwo" alt="Back Button"/>
       </Link>
 
+    {/* Return Stretch Data */}
     <div className="headerImageStretch">
       <img src={result.cover_image_wide} className="stretchImage" alt="Adjustment" />
     </div>
@@ -43,6 +44,7 @@ return (
       <p><strong>Duration:</strong> {result.duration}</p>
     </div>
 
+    {/* Return Countdown Timer */}
     <Timer/>
     
     <Link to= "/progress" className="timerLink" style={{textDecoration: 'none'}} >
@@ -54,4 +56,5 @@ return (
   );
 }
 
+//Export Page
 export default ShoulderTimerPage;
