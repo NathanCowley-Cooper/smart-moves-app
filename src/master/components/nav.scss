@@ -32,17 +32,6 @@ nav{
     width:100%;
   }
 
-
-#navIcons{
-  h5{
-    font-size: 12px;
-    font-weight: 100;
-    margin: 5px 0 0 0;
-    color: $brand-blue;
-    text-decoration: none;
-  }
-}
-
 .mainNav__link--active .mainNavIcon{
   opacity:100%;
 }
@@ -55,4 +44,14 @@ nav{
   display:grid;
   justify-items: center;
   width:60px;
+}
+
+#navIcons{
+  h5{
+    font-size: 12px;
+    font-weight: 100;
+    margin: 5px 0 0 0;
+    color: $brand-blue;
+    text-decoration: none;
+  }
 }
