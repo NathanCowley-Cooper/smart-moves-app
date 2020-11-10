@@ -156,22 +156,10 @@ nav {
   color: #1BA2D9;
   text-decoration: none; }
 
-.mainNav__link--active .homeIcon {
+.mainNav__link--active .mainNavIcon {
   opacity: 100%; }
 
-.mainNav__link--active .progressIcon {
-  opacity: 100%; }
-
-.mainNav__link--active .menuIcon {
-  opacity: 100%; }
-
-.homeIcon {
-  opacity: 40%; }
-
-.progressIcon {
-  opacity: 40%; }
-
-.menuIcon {
+.mainNavIcon {
   opacity: 40%; }
 
 #navIcons {

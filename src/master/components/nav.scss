@@ -43,30 +43,13 @@ nav{
   }
 }
 
-.mainNav__link--active .homeIcon{
+.mainNav__link--active .mainNavIcon{
   opacity:100%;
 }
 
-.mainNav__link--active .progressIcon{
-  opacity:100%;
-}
-
-.mainNav__link--active .menuIcon{
-  opacity:100%;
-}
-
-.homeIcon{
+.mainNavIcon{
   opacity:40%;
 }
-
-.progressIcon{
-  opacity:40%;
-}
-
-.menuIcon{
-  opacity:40%;
-}
-
   
 #navIcons{
   display:grid;
