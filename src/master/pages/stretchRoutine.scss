@@ -141,3 +141,18 @@
     grid-template-columns: 100%;
     
 }
+
+@media screen and (max-height:640px){
+    .stretch_info h5 {
+        font-size: 16px;
+
+    }
+    .heading{
+        h5{
+            font-size: 16px;
+        }
+        h6{
+            font-size: 12px;
+        }
+    }
+}

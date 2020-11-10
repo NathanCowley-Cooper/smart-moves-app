@@ -1,37 +1,38 @@
+//Import Controllers
 import React, { useState, useMemo, useEffect } from "react";
 import './dist/dist.css';
-import Menu from './pages/menu.jsx';
-import Home from './pages/home.jsx';
-import Login from './pages/login.jsx';
-import CreateAccount from './pages/createAccount.jsx';
-import Splash from './pages/splash.jsx';
-import Progress from './pages/progress.jsx';
-import Timer from './pages/timer.jsx';
+import Menu from './pages/Core Pages/menu';
+import Home from './pages/Core Pages/home';
+import Login from './pages/User Authentication/login.jsx';
+import CreateAccount from './pages/User Authentication/createAccount.jsx';
+import Splash from './pages/Core Pages/splash';
+import Progress from './pages/Core Pages/progress';
+import Timer from './pages/Timer Pages/timer';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import StretchWalkthrough from './pages/stretchWalkthrough';
-import ErgonomicWalkthrough from './pages/ergonomicWalkthrough';
-import DailyStretches from './pages/dailyStretch';
-import OfficeStretches from './pages/officeStretch';
-import { UserContext } from "./components/userContext";
-import { User } from "./components/user";
-import ErgonomicPage from "./pages/ergonomicPage";
-import StretchDailyPage from "./pages/stretchDailyPage";
-import StretchOfficePage from "./pages/stretchOfficePage";
+import StretchWalkthrough from './pages/walkthrough/stretchWalkthrough';
+import ErgonomicWalkthrough from './pages/walkthrough/ergonomicWalkthrough';
+import DailyStretches from './pages/Page Render Component/dailyStretch';
+import OfficeStretches from './pages/Page Render Component/officeStretch';
+import { UserContext } from "./components/User Authentication/userContext";
+import { User } from "./components/User Authentication/user";
+import ErgonomicPage from "./pages/Page Render Component/ergonomicPage";
+import StretchDailyPage from "./pages/Page Render Component/stretchDailyPage";
+import StretchOfficePage from "./pages/Page Render Component/stretchDailyPage";
 
-import HamstringTimerPage from "./pages/hamstringTimer";
-import SeatForwardTimerPage from "./pages/seatForwardTimer";
-import TricepTimerPage from "./pages/tricepTimer";
-import ShoulderTimerPage from "./pages/shoulderTimer";
+import HamstringTimerPage from "./pages/Timer Pages/hamstringTimer";
+import SeatForwardTimerPage from "./pages/Timer Pages/seatForwardTimer";
+import TricepTimerPage from "./pages/Timer Pages/tricepTimer";
+import ShoulderTimerPage from "./pages/Timer Pages/shoulderTimer";
 
-import ShrugTimerPage from "./pages/shrugTimer";
-import BehindHeadTimerPage from "./pages/behindHeadTimer";
-import SideBendsTimerPage from "./pages/sideBendsTimer";
-import BackwardReachTimerPage from "./pages/backwardReachTimer";
+import ShrugTimerPage from "./pages/Timer Pages/shrugTimer";
+import BehindHeadTimerPage from "./pages/Timer Pages/behindHeadTimer";
+import SideBendsTimerPage from "./pages/Timer Pages/sideBendsTimer";
+import BackwardReachTimerPage from "./pages/Timer Pages/backwardReachTimer";
 
-import ErgVideoPage from "./pages/ErgVideoPage";
+import ErgVideoPage from "./pages/Page Render Component/ErgVideoPage";
 
 //Notifications
-// React Notification
+//React Notification
 import 'react-notifications/lib/notifications.css';
 import { NotificationContainer } from 'react-notifications';
 
@@ -73,6 +74,7 @@ function App() {
   }, []);
   
   return (
+    //
     <Router>
       <UserContext.Provider value={providerUser}>
         <div className="App">

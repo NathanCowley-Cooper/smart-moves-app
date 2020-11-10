@@ -64,3 +64,12 @@
   color: #FFFFFF;
   border-width: 0;
 }
+
+@media screen and (max-height:640px){
+  .stretchPage-btn{
+    font-size: 10px;
+  }
+  .ergPage-btn{
+    font-size: 10px;
+  }
+}

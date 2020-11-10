@@ -97,3 +97,49 @@
         align-self: center;
     }
 }
+
+@media screen and (max-height:640px){
+    #form-login{
+        margin-top:25%;
+    }
+    .loginNav{  
+        h6{
+            font-size: 10px;
+        }
+    }
+
+    .facebook-share{
+        width: 40%;
+        height:35px;
+        h4{
+            font-size: 10px;
+            color:$dark-grey;
+            font-weight: 100;
+            margin-right: 10px;
+            align-self: center;
+        }
+        .fab{
+            font-size: 1.5em;
+
+        }
+    }
+
+}
+
+@media screen and (max-height:650px){
+
+    #navIcons{
+      width:40px;
+    }
+  
+    .svgicon{
+      width:40px;
+    }
+  
+}
+
+@media screen and (max-width:600px){
+    .loginHeading{
+        border-radius:0;
+    }
+}

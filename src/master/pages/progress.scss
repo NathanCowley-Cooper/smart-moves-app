@@ -21,3 +21,20 @@
     height:200px;
     width:200px;
 }
+
+@media screen and (max-height:650px){
+    .progressLogo{
+        margin-bottom: 5%;
+        height:150px;
+        width:150px;
+    }
+    
+    .progress{
+        
+        h1{
+            font-size: 25px;
+        }
+    }
+   
+  
+}

@@ -59,3 +59,16 @@
   background-color: $brand-blue;
   border-radius: 50%;
 }
+
+@media screen and (max-width:600px){
+
+  #header{
+    border-radius: 0;
+  }
+
+  #header2{
+    border-radius: 0;
+  }
+
+  
+}

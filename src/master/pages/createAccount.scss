@@ -62,3 +62,20 @@
     position: absolute;
     z-index: 1000;
 }
+
+@media screen and (max-height:640px){
+    #form-create-account {
+        margin-top: 10%;
+    }    
+    #form-create-account .input {
+        height:30px;
+    }
+    
+
+}
+
+@media screen and (max-width:600px){
+    .createAccountFooter{
+        border-radius: 0;
+    }
+}

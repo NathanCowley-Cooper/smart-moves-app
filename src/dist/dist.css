@@ -52,6 +52,12 @@
   background-color: #1BA2D9;
   border-radius: 50%; }
 
+@media screen and (max-width: 600px) {
+  #header {
+    border-radius: 0; }
+  #header2 {
+    border-radius: 0; } }
+
 .headerNav {
   background: #FFFFFF;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
@@ -107,6 +113,12 @@
   background-color: #1BA2D9;
   color: #FFFFFF;
   border-width: 0; }
+
+@media screen and (max-height: 640px) {
+  .stretchPage-btn {
+    font-size: 10px; }
+  .ergPage-btn {
+    font-size: 10px; } }
 
 nav {
   min-height: 80px;
@@ -204,7 +216,7 @@ nav {
 
 .result_routine {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 170px auto;
   background-color: #ffff;
   filter: drop-shadow(0px 0px 6px #D3D3D2);
   border-radius: 20px;
@@ -239,7 +251,8 @@ nav {
   color: #0F87BA; }
 
 .information {
-  align-self: center; }
+  align-self: center;
+  margin-left: 10%; }
   .information h5 {
     margin: 0;
     font-family: "Roboto", sans-serif;
@@ -255,6 +268,39 @@ nav {
     font-size: 15px;
     line-height: 2em;
     color: #949494; }
+
+@media screen and (max-width: 600px) {
+  .headerImage {
+    border-radius: 0; }
+  .dailyheadingImage {
+    border-radius: 0; }
+  .headerImageStretch {
+    border-radius: 0; }
+  .dailyheadingImage {
+    border-radius: 0; }
+  .officeheadingImage {
+    border-radius: 0; } }
+
+@media screen and (max-height: 650px) {
+  .coverImage_stretch {
+    width: auto;
+    height: 120px; }
+  .result_routine {
+    display: grid;
+    grid-template-columns: 120px auto;
+    height: 120px; }
+  .information h5 {
+    font-size: 20px; }
+  .information h6 {
+    font-size: 12px; }
+  .imgBox {
+    margin: 5% 12.5%;
+    width: 80%; }
+  .result h5 {
+    margin: 2% 12.5%;
+    font-size: 12px; }
+  .coverImage {
+    height: 90px; } }
 
 h1 {
   font-family: "Roboto";
@@ -334,6 +380,16 @@ h1 {
   position: absolute;
   z-index: 1000; }
 
+@media screen and (max-height: 640px) {
+  #form-create-account {
+    margin-top: 10%; }
+  #form-create-account .input {
+    height: 30px; } }
+
+@media screen and (max-width: 600px) {
+  .createAccountFooter {
+    border-radius: 0; } }
+
 .loginPage {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
@@ -408,6 +464,33 @@ h1 {
     font-size: 2em;
     align-self: center; }
 
+@media screen and (max-height: 640px) {
+  #form-login {
+    margin-top: 25%; }
+  .loginNav h6 {
+    font-size: 10px; }
+  .facebook-share {
+    width: 40%;
+    height: 35px; }
+    .facebook-share h4 {
+      font-size: 10px;
+      color: #949494;
+      font-weight: 100;
+      margin-right: 10px;
+      align-self: center; }
+    .facebook-share .fab {
+      font-size: 1.5em; } }
+
+@media screen and (max-height: 650px) {
+  #navIcons {
+    width: 40px; }
+  .svgicon {
+    width: 40px; } }
+
+@media screen and (max-width: 600px) {
+  .loginHeading {
+    border-radius: 0; } }
+
 .userBar {
   position: absolute;
   top: 70px;
@@ -457,6 +540,19 @@ h1 {
     color: #1BA2D9;
     margin: 0; }
 
+@media screen and (max-height: 650px) {
+  #menuIcons {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    align-items: center;
+    margin: 10px 0; }
+    #menuIcons h5 {
+      font-size: 16px;
+      font-weight: 400;
+      color: #1BA2D9;
+      margin: 0;
+      text-align: left; } }
+
 .progress {
   height: 100%;
   width: 100%;
@@ -474,6 +570,14 @@ h1 {
   margin-bottom: 5%;
   height: 200px;
   width: 200px; }
+
+@media screen and (max-height: 650px) {
+  .progressLogo {
+    margin-bottom: 5%;
+    height: 150px;
+    width: 150px; }
+  .progress h1 {
+    font-size: 25px; } }
 
 .splashScreen {
   position: absolute;
@@ -496,6 +600,15 @@ h1 {
   place-self: center;
   height: 260px;
   width: auto; }
+
+@media screen and (max-height: 640px) {
+  .Icon {
+    height: 180px;
+    width: auto; } }
+
+@media screen and (max-width: 600px) {
+  .splashScreen {
+    border-radius: 0; } }
 
 .stretchWalkthrough {
   height: 100%;
@@ -545,6 +658,16 @@ h1 {
     color: #888;
     text-align: center;
     margin: 0 7.5%; }
+
+@media screen and (max-height: 640px) {
+  .WT_Info h2 {
+    font-size: 25px; }
+  .WT_Info p {
+    font-size: 16px; } }
+
+@media screen and (max-width: 600px) {
+  .WT_Info {
+    border-radius: 0; } }
 
 .dailyheadingImage {
   height: 260px;
@@ -659,6 +782,14 @@ h1 {
   display: grid;
   grid-template-columns: 100%; }
 
+@media screen and (max-height: 640px) {
+  .stretch_info h5 {
+    font-size: 16px; }
+  .heading h5 {
+    font-size: 16px; }
+  .heading h6 {
+    font-size: 12px; } }
+
 .headerImage {
   height: 320px;
   width: 100%;
@@ -707,7 +838,7 @@ h1 {
     font-weight: 400;
     font-size: 18px;
     color: #1BA2D9;
-    margin: 5% 0 0 5%; }
+    margin: 0 0 0 5%; }
 
 .stretchInfo {
   height: 100%;
@@ -858,6 +989,66 @@ h1 {
   border-radius: 5%;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
 
+@media screen and (max-height: 640px) {
+  .ergonomicImage {
+    height: 160px;
+    width: auto;
+    padding-top: 20px; }
+  .headerImage {
+    height: 240px; }
+    .headerImage h1 {
+      font-size: 24px;
+      color: #1BA2D9; }
+  .ErgonomicInfo h4 {
+    font-size: 16px; }
+  .stepCircle {
+    height: 30px;
+    width: 30px;
+    margin: 2.5% 0 0 0; }
+    .stepCircle h3 {
+      font-size: 14px; }
+  .stepRow p {
+    font-size: 12px;
+    margin: 2.5% 5% 0 5%; }
+  .row p {
+    font-size: 12px;
+    line-height: 180%; }
+  .stretchInfo h4 {
+    font-size: 16px; }
+  .stretchInfo h1 {
+    font-size: 24px; }
+  .headerImageStretch {
+    height: 240px; }
+  .stretchImage {
+    height: 240px; }
+  .rowDuration p {
+    font-size: 12px;
+    margin: 10% 5% 0 5%; }
+  .rowDuration2 p {
+    font-size: 12px;
+    margin: 10% 5% 0 5%; }
+  .rowPurpose p {
+    font-size: 12px;
+    margin: 10% 5% 0 5%; }
+  .timerHeading h1 {
+    font-size: 24px;
+    margin: 5% 0 5% 0; }
+  .rowTimer p {
+    font-size: 12px; }
+  .next_stretch {
+    height: 70px; }
+  .stretchBox {
+    height: 70px;
+    width: 70px; }
+  .nextStretch_info h5 {
+    font-size: 16px;
+    color: #1BA2D9;
+    margin: 0 0 0 10%; } }
+
+@media screen and (max-width: 600px) {
+  .next_stretch {
+    border-radius: 0; } }
+
 .App {
   height: 823px;
   width: 411px;
@@ -876,7 +1067,7 @@ h1 {
     width: 308px;
     height: 617px; } }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 600px) {
   .App {
     width: 100%;
     height: 100%;
@@ -1048,7 +1239,7 @@ h1 {
 
 .adjustment-btn {
   height: 40px;
-  width: 250px;
+  width: 60%;
   margin: 3% 0;
   background: #1BA2D9;
   color: white;
@@ -1060,7 +1251,51 @@ h1 {
   justify-self: center;
   position: absolute;
   bottom: 2%;
-  left: 80.5px;
+  left: 20%;
   cursor: pointer; }
   .adjustment-btn:focus {
     outline: 0; }
+
+@media screen and (max-height: 680px) {
+  .buttons {
+    width: 200px;
+    cursor: pointer; }
+  .loginPage-btn {
+    height: 35px;
+    width: 200px;
+    font-size: 12px; }
+  .createPage-btn {
+    height: 35px;
+    width: 200px;
+    font-size: 12px; }
+  .login-btn {
+    height: 35px;
+    width: 200px;
+    font-size: 12px; }
+  .guest-btn {
+    height: 35px;
+    width: 200px;
+    font-size: 12px; }
+  .submit-btn {
+    height: 35px;
+    width: 200px;
+    font-size: 12px; }
+  .input {
+    height: 35px;
+    width: 200px;
+    font-size: 12px; }
+  .walkthrough-btn {
+    height: 35px;
+    width: 200px;
+    margin: 5% 0 10% 0; }
+  .adjustment-btn {
+    height: 35px;
+    width: 60%;
+    font-size: 14px; }
+  .timer-btn {
+    height: 35px;
+    width: 40%;
+    font-size: 14px; }
+  .timerComplete-btn {
+    margin: 5% 0;
+    font-size: 14px; } }
