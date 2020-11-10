@@ -157,6 +157,7 @@ nav {
   justify-items: center;
   width: 60px;
   filter: grayscale(100%);
+  opacity: 40%;
   background-color: #FFFFFF;
   border-width: 0;
   cursor: pointer; }
@@ -170,7 +171,8 @@ nav {
     text-decoration: none; }
 
 .mainNav__link--active .mainNavIcon {
-  filter: grayscale(0%); }
+  filter: grayscale(0%);
+  opacity: 100%; }
 
 .stretches {
   position: absolute;
