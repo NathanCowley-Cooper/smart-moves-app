@@ -156,10 +156,10 @@ nav {
   color: #1BA2D9;
   text-decoration: none; }
 
-.svgicon{
+.svgicon {
   opacity: 40%; }
 
-.navbar__link--active .svgicon {
+.mainNav__link--active .svgicon {
   opacity: 100%; }
 
 #navIcons {

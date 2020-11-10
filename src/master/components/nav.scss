@@ -31,12 +31,7 @@ nav{
     font-weight: normal;
     width:100%;
   }
-  
-.navbar__link--active h5{
-  color: $brand-blue;
-  font-weight: $base-font-weight;
-  opacity:100%;
-}
+
 
 #navIcons{
   h5{
@@ -52,13 +47,8 @@ nav{
   opacity:40%;
 }
 
-.navbar__link--active .svgicon{
+.mainNav__link--active .svgicon{
   opacity:100%;
-  h5{
-    color: $brand-blue;
-    font-weight: $base-font-weight;
-    opacity:100%;
-  }
 }
   
 #navIcons{
