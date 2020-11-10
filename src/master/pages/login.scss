@@ -48,8 +48,8 @@
         font-size: 12px;
         font-weight: 100;
         color: $brand-blue;
-        opacity:40%;
         margin:10px;
+        filter: opacity(40%);
 
     }
 }
@@ -57,7 +57,7 @@
 .loginBar__link--active h6{
     color: $brand-blue;
     font-weight: $base-font-weight;
-    opacity:100%;
+    filter: opacity(100%);
 }
 
 .googleSignUp{

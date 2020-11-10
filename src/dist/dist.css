@@ -417,13 +417,13 @@ h1 {
     font-size: 12px;
     font-weight: 100;
     color: #1BA2D9;
-    opacity: 40%;
-    margin: 10px; }
+    margin: 10px;
+    filter: opacity(40%); }
 
 .loginBar__link--active h6 {
   color: #1BA2D9;
   font-weight: 400;
-  opacity: 100%; }
+  filter: opacity(100%); }
 
 .googleSignUp {
   align-self: center; }
