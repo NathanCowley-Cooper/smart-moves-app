@@ -33,14 +33,14 @@ nav{
   }
 
 .mainNavIcon{
-  opacity:40%;
+  filter: grayscale(100%);
 }
   
 .mainNavIcon{
   display:grid;
   justify-items: center;
   width:60px;
-  opacity:40%;
+  filter: grayscale(100%);
 
   background-color: #FFFFFF;
   border-width: 0;
@@ -58,5 +58,5 @@ nav{
 }
 
 .mainNav__link--active .mainNavIcon{
-  opacity:100%;
+  filter: grayscale(0%);
 }
