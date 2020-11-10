@@ -149,23 +149,28 @@ nav {
   font-weight: normal;
   width: 100%; }
 
-.mainNav__link--active .mainNavIcon {
-  opacity: 100%; }
-
 .mainNavIcon {
   opacity: 40%; }
 
-#navIcons {
+.mainNavIcon {
   display: grid;
   justify-items: center;
-  width: 60px; }
+  width: 60px;
+  opacity: 40%;
+  background-color: #FFFFFF;
+  border-width: 0;
+  cursor: pointer; }
+  .mainNavIcon:focus {
+    outline: 0; }
+  .mainNavIcon h5 {
+    font-size: 12px;
+    font-weight: 100;
+    margin: 5px 0 0 0;
+    color: #1BA2D9;
+    text-decoration: none; }
 
-#navIcons h5 {
-  font-size: 12px;
-  font-weight: 100;
-  margin: 5px 0 0 0;
-  color: #1BA2D9;
-  text-decoration: none; }
+.mainNav__link--active .mainNavIcon {
+  opacity: 100%; }
 
 .stretches {
   position: absolute;

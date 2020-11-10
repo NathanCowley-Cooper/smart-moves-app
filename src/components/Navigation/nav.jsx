@@ -9,18 +9,28 @@ function Nav() {
   return (
     <nav>
       <div id="navigtaion">
+
         <NavLink activeClassName="mainNav__link--active" to= "/home" id="navIcons" style={{textDecoration: 'none'}}>
-            <img src="/images/home.svg" className="mainNavIcon" alt="Home Icon"/>
-            <h5>Home</h5>
+          <button className="mainNavIcon" >
+                <img src="/images/home.svg" className="activeNav" alt="Home Icon"/>
+                <h5>Home</h5>
+          </button>
         </NavLink>
+
         <NavLink activeClassName="mainNav__link--active" to= "/progress" id="navIcons" style={{textDecoration: 'none'}}>
-            <img src="/images/progress.svg" className="mainNavIcon" alt="Progress Icon"/>
+          <button className="mainNavIcon" >
+            <img src="/images/progress.svg" className="activeNav" alt="Progress Icon"/>
             <h5>Progress</h5>
+          </button>
         </NavLink>
+        
         <NavLink activeClassName="mainNav__link--active" to= "/menu" id="navIcons" style={{textDecoration: 'none'}}>
-            <img src="/images/menu.svg" className="mainNavIcon" alt="Menu Icon" />
+          <button className="mainNavIcon" >
+            <img src="/images/menu.svg" className="activeNav" alt="Menu Icon" />
             <h5>Menu</h5>
+          </button>
         </NavLink>
+
       </div>
     </nav>
   );

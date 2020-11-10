@@ -32,21 +32,22 @@ nav{
     width:100%;
   }
 
-.mainNav__link--active .mainNavIcon{
-  opacity:100%;
-}
-
 .mainNavIcon{
   opacity:40%;
 }
   
-#navIcons{
+.mainNavIcon{
   display:grid;
   justify-items: center;
   width:60px;
-}
+  opacity:40%;
 
-#navIcons{
+  background-color: #FFFFFF;
+  border-width: 0;
+  
+  cursor: pointer;
+  &:focus {outline:0;}
+
   h5{
     font-size: 12px;
     font-weight: 100;
@@ -54,4 +55,8 @@ nav{
     color: $brand-blue;
     text-decoration: none;
   }
+}
+
+.mainNav__link--active .mainNavIcon{
+  opacity:100%;
 }
