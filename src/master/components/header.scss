@@ -70,5 +70,51 @@
     border-radius: 0;
   }
 
+  #header{
+    height: 60px;
+    width: 100%;
+  }
+  
+  #header2{
+
+    height: 60px;
+    h4{
+      font-size: 14px;
+      color:white;
+      text-transform: uppercase;
+      text-align: center;
+      height: fit-content;
+      align-self: center;
+    }
+  }
+  
+  .headerIcon{
+    height: 50px;
+    width:auto;
+    margin: 5px;
+    justify-self: center;
+  }
+  
+  .backButton{
+    position: absolute;
+    height:60px;
+    width:60px;
+    left: 0;
+    top: 0;
+    z-index: 20;
+  }
+  
+  .backButtonTwo{
+    position: absolute;
+    height:40px;
+    width:40px;
+    margin:3%;
+    left: 0;
+    top: 0;
+    z-index: 20;
+    background-color: $brand-blue;
+    border-radius: 50%;
+  }
+
   
 }

@@ -56,7 +56,41 @@
   #header {
     border-radius: 0; }
   #header2 {
-    border-radius: 0; } }
+    border-radius: 0; }
+  #header {
+    height: 60px;
+    width: 100%; }
+  #header2 {
+    height: 60px; }
+    #header2 h4 {
+      font-size: 14px;
+      color: white;
+      text-transform: uppercase;
+      text-align: center;
+      height: fit-content;
+      align-self: center; }
+  .headerIcon {
+    height: 50px;
+    width: auto;
+    margin: 5px;
+    justify-self: center; }
+  .backButton {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    left: 0;
+    top: 0;
+    z-index: 20; }
+  .backButtonTwo {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    margin: 3%;
+    left: 0;
+    top: 0;
+    z-index: 20;
+    background-color: #1BA2D9;
+    border-radius: 50%; } }
 
 .headerNav {
   background: #FFFFFF;
@@ -118,7 +152,10 @@
   .stretchPage-btn {
     font-size: 10px; }
   .ergPage-btn {
-    font-size: 10px; } }
+    font-size: 10px; }
+  .headerNav {
+    left: 0px;
+    top: 60px; } }
 
 nav {
   min-height: 80px;
@@ -168,6 +205,32 @@ nav {
 
 .mainNav__link--active .mainNavIcon {
   filter: opacity(100%); }
+
+@media screen and (max-height: 650px) {
+  #navIcons {
+    width: 40px; }
+  .svgicon {
+    width: 40px; }
+  nav {
+    min-height: 60px; }
+  .mainNavIcon {
+    display: grid;
+    justify-items: center;
+    width: 40px;
+    background-color: #FFFFFF;
+    border-width: 0;
+    filter: opacity(40%);
+    cursor: pointer; }
+    .mainNavIcon:focus {
+      outline: 0; }
+    .mainNavIcon .img {
+      width: 40px; }
+    .mainNavIcon h5 {
+      font-size: 10px;
+      font-weight: 100;
+      margin: 5px 0 0 0;
+      color: #1BA2D9;
+      text-decoration: none; } }
 
 .stretches {
   position: absolute;
@@ -341,7 +404,7 @@ h1 {
   background: #FFFFFF;
   mix-blend-mode: normal;
   filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
-  z-index: 10; }
+  z-index: 200; }
   #form-create-account .input {
     border-width: 0px 0px 1px 0px;
     border-color: #949494;
@@ -402,7 +465,8 @@ h1 {
   display: none; }
 
 #form-login {
-  margin-top: 10%; }
+  margin-top: 10%;
+  z-index: 200; }
 
 .row_three {
   margin-top: 5%; }
@@ -459,7 +523,7 @@ h1 {
 
 @media screen and (max-height: 640px) {
   #form-login {
-    margin-top: 25%; }
+    margin-top: 15%; }
   .loginNav h6 {
     font-size: 10px; }
   .facebook-share {
@@ -544,7 +608,13 @@ h1 {
       font-weight: 400;
       color: #1BA2D9;
       margin: 0;
-      text-align: left; } }
+      text-align: left; }
+  .userDetails {
+    align-self: center; }
+    .userDetails h3 {
+      font-size: 20px; }
+  .user-svg {
+    margin-left: 15px; } }
 
 .progress {
   height: 100%;
@@ -654,9 +724,9 @@ h1 {
 
 @media screen and (max-height: 640px) {
   .WT_Info h2 {
-    font-size: 25px; }
+    font-size: 22px; }
   .WT_Info p {
-    font-size: 16px; } }
+    font-size: 14px; } }
 
 @media screen and (max-width: 600px) {
   .WT_Info {
@@ -1251,42 +1321,42 @@ h1 {
 
 @media screen and (max-height: 680px) {
   .buttons {
-    width: 200px;
+    width: 220px;
     cursor: pointer; }
   .loginPage-btn {
-    height: 35px;
-    width: 200px;
+    height: 45px;
+    width: 220px;
     font-size: 12px; }
   .createPage-btn {
-    height: 35px;
-    width: 200px;
+    height: 45px;
+    width: 220px;
     font-size: 12px; }
   .login-btn {
-    height: 35px;
-    width: 200px;
+    height: 45px;
+    width: 220px;
     font-size: 12px; }
   .guest-btn {
-    height: 35px;
-    width: 200px;
+    height: 45px;
+    width: 220px;
     font-size: 12px; }
   .submit-btn {
-    height: 35px;
-    width: 200px;
+    height: 45px;
+    width: 220px;
     font-size: 12px; }
   .input {
     height: 35px;
     width: 200px;
     font-size: 12px; }
   .walkthrough-btn {
-    height: 35px;
-    width: 200px;
+    height: 45px;
+    width: 220px;
     margin: 5% 0 10% 0; }
   .adjustment-btn {
-    height: 35px;
+    height: 45px;
     width: 60%;
     font-size: 14px; }
   .timer-btn {
-    height: 35px;
+    height: 45px;
     width: 40%;
     font-size: 14px; }
   .timerComplete-btn {

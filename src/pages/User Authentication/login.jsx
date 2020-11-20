@@ -4,6 +4,8 @@ import './../../dist/dist.css';
 import SignInUser from "./../../components/User Authentication/signInUser";
 import SignIn from "./../../components/User Authentication/signIn";
 
+
+import { Transition } from 'react-transition-group';
 //React Notification
 import { NotificationManager } from 'react-notifications';
 

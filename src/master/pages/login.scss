@@ -26,6 +26,7 @@
 
 #form-login{
     margin-top:10%;
+    z-index:200;
 
 }
 
@@ -100,7 +101,7 @@
 
 @media screen and (max-height:640px){
     #form-login{
-        margin-top:25%;
+        margin-top:15%;
     }
     .loginNav{  
         h6{
