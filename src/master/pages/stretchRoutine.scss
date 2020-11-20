@@ -87,7 +87,9 @@
     height:100px;
     border-radius: 0 0 15px 15px;
 
-    align-self: end;
+    position: absolute;
+    bottom:0;
+    left:0;
 
     margin:2% 0 0 0;
     background-color: white;
@@ -152,5 +154,10 @@
         h6{
             font-size: 12px;
         }
+    }
+
+    .next_stretch{
+        align-self: end;
+    
     }
 }
