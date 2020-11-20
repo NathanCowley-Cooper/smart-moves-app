@@ -238,10 +238,6 @@ nav {
   height: auto;
   top: 120px; }
 
-.stretchPage {
-  display: grid;
-  grid-template-columns: 100%; }
-
 .ergonomicsList {
   position: absolute;
   width: 100%;
@@ -855,9 +851,7 @@ h1 {
   .heading h5 {
     font-size: 16px; }
   .heading h6 {
-    font-size: 12px; }
-  .next_stretch {
-    align-self: end; } }
+    font-size: 12px; } }
 
 .headerImage {
   height: 320px;
@@ -1088,9 +1082,9 @@ h1 {
   .stretchInfo h1 {
     font-size: 24px; }
   .headerImageStretch {
-    height: 240px; }
+    height: 220px; }
   .stretchImage {
-    height: 240px; }
+    height: 220px; }
   .rowDuration p {
     font-size: 12px;
     margin: 10% 5% 0 5%; }
