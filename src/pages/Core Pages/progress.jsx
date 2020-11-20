@@ -12,7 +12,7 @@ function Progress() {
       <Header/>
       
       <img src="/images/progress.svg" className="progressLogo" alt="Progress Icon"/>
-      <h1>View Users Progress Here!</h1>
+      <h1>View Your Progress Here!</h1>
 
       {/* Render Nav */}
       <Nav/>
