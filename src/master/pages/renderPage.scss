@@ -174,7 +174,7 @@
 }
 
 .timerHeading{
-    height:100%;
+    height:min-content;
     width:100%;
 
     h1{
@@ -272,7 +272,7 @@
     .stepCircle {
         height: 30px;
         width: 30px;
-        margin: 2.5% 0 0 0;
+        margin: 2.5% 0 0 2.5%;
         h3 {
             font-size: 14px;
         }
@@ -288,6 +288,7 @@
 
     .stretchInfo h4 {
         font-size: 16px;
+        margin:2.5% 0 0 2.5%;
     }
     .stretchInfo h1 {
         font-size: 24px;
@@ -330,11 +331,15 @@
         color: #1BA2D9;
         margin: 0 0 0 10%;
     }
+    .next_stretch{
+        margin-top:5%;
+      }
 
 }
 
 @media screen and (max-width:600px){
     .next_stretch{
       border-radius: 0;
+
     }
 }

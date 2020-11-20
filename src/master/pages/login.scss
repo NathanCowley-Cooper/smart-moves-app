@@ -3,7 +3,7 @@
 
 .loginPage{
     display:grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 200px auto auto;
     justify-items: center;
     height:100%;
     width:100%;
@@ -25,7 +25,7 @@
 
 
 #form-login{
-    margin-top:10%;
+    margin-top:20%;
     z-index:200;
 
 }

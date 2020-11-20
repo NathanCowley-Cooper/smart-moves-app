@@ -8,6 +8,11 @@
     top: 120px;
 }
 
+.stretchPage{
+    display:grid;
+    grid-template-columns: 100%;
+}
+
 .ergonomicsList{
     position:absolute;
     width: 100%;
