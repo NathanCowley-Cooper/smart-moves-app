@@ -894,7 +894,7 @@ h1 {
   height: 100%;
   width: 100%;
   display: grid;
-  grid-template-rows: 50px auto auto auto auto auto; }
+  grid-template-rows: 50px auto auto auto auto auto auto; }
   .ErgonomicInfo h4 {
     font-family: "Roboto", sans-serif;
     font-style: normal;
@@ -1306,7 +1306,7 @@ h1 {
 .adjustment-btn {
   height: 40px;
   width: 60%;
-  margin: 3% 0;
+  margin: 3% 0 5% 0;
   background: #1BA2D9;
   color: white;
   border-radius: 100px;
@@ -1315,9 +1315,6 @@ h1 {
   font-style: normal;
   font-size: 16px;
   justify-self: center;
-  position: absolute;
-  bottom: 2%;
-  left: 20%;
   cursor: pointer; }
   .adjustment-btn:focus {
     outline: 0; }

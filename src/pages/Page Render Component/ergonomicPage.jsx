@@ -40,36 +40,36 @@ function ErgonomicPage({match}) {
         <h1>{result.ergonomic_name}</h1>
       </div>
       <div className="ErgonomicInfo">
-      <div className="titleRow">
-        <h4>Steps</h4>
-        <Link to={`/ergonomics/${result._id}/video`} className="timerLink" style={{textDecoration: 'none'}} >
-          <i className="fab fa-youtube"></i>
+        <div className="titleRow">
+          <h4>Steps</h4>
+          <Link to={`/ergonomics/${result._id}/video`} className="timerLink" style={{textDecoration: 'none'}} >
+            <i className="fab fa-youtube"></i>
+          </Link>
+        </div>
+
+        <div className="stepRow">
+          <div className="stepCircle"><h3>1</h3></div>
+          <p>{result.step_one}</p>
+        </div>
+
+        <div className="stepRow">
+          <div className="stepCircle"><h3>2</h3></div>
+          <p>{result.step_two}</p>
+        </div>
+
+        <div className="stepRow">
+          <div className="stepCircle"><h3>3</h3></div>
+          <p>{result.step_three}</p>
+        </div>
+
+        <div className="row">
+          <p><strong>Extra Information:</strong> {result.description}</p>
+        </div>
+
+        <Link to= "/progress" className="timerLink" style={{textDecoration: 'none'}} >
+          <button className="adjustment-btn button" >Adjustment Complete</button>
         </Link>
       </div>
-
-      <div className="stepRow">
-        <div className="stepCircle"><h3>1</h3></div>
-        <p>{result.step_one}</p>
-      </div>
-
-      <div className="stepRow">
-        <div className="stepCircle"><h3>2</h3></div>
-        <p>{result.step_two}</p>
-      </div>
-
-      <div className="stepRow">
-        <div className="stepCircle"><h3>3</h3></div>
-        <p>{result.step_three}</p>
-      </div>
-
-      <div className="row">
-        <p><strong>Extra Information:</strong> {result.description}</p>
-      </div>
-      </div>
-
-      <Link to= "/progress" className="timerLink" style={{textDecoration: 'none'}} >
-        <button className="adjustment-btn button" >Adjustment Complete</button>
-      </Link>
     </div>
   );
 }

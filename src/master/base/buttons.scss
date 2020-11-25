@@ -204,7 +204,7 @@
 .adjustment-btn{
   height: 40px;
   width: 60%;
-  margin: 3% 0;
+  margin: 3% 0 5% 0;
   background: $brand-blue;
   color: white;
   border-radius: 100px;
@@ -213,10 +213,6 @@
   font-style: normal;
   font-size: 16px;
   justify-self: center;
-
-  position: absolute;
-  bottom:2%;
-  left:20%;
 
   cursor: pointer;
 
