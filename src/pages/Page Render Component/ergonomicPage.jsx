@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import './../../dist/dist.css';
 import {Link} from 'react-router-dom';
+import ProgressBtn from './../../components/User Authentication/progressBtn';
 
 
 function ErgonomicPage({match}) {
@@ -66,9 +67,11 @@ function ErgonomicPage({match}) {
           <p><strong>Extra Information:</strong> {result.description}</p>
         </div>
 
-        <Link to= "/progress" className="timerLink" style={{textDecoration: 'none'}} >
+        <ProgressBtn id={this.props.match.params.id} />
+
+        {/* <Link to= "/progress" className="timerLink" style={{textDecoration: 'none'}} >
           <button className="adjustment-btn button" >Adjustment Complete</button>
-        </Link>
+        </Link> */}
       </div>
     </div>
   );

@@ -1,3 +1,5 @@
+@import '../../node_modules/normalize-scss/sass/normalize';
+
 // Variables
 @import './vars';
 
@@ -10,3 +12,4 @@
 @import 'base/app.scss';
 @import 'base/appResponsive.scss';
 @import 'base/buttons.scss';
+

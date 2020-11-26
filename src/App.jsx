@@ -56,6 +56,7 @@ function App() {
               const userData = {
                 _id: res.user._id,
                 first_name: res.user.first_name,
+                progress: res.user.progress,
                 email: res.user.email,
                 authenticated: true
               };
