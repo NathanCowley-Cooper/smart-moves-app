@@ -67,11 +67,10 @@ function ErgonomicPage({match}) {
           <p><strong>Extra Information:</strong> {result.description}</p>
         </div>
 
-        <ProgressBtn id={this.props.match.params.id} />
 
-        {/* <Link to= "/progress" className="timerLink" style={{textDecoration: 'none'}} >
+        <Link to= "/progress" className="timerLink" style={{textDecoration: 'none'}} >
           <button className="adjustment-btn button" >Adjustment Complete</button>
-        </Link> */}
+        </Link>
       </div>
     </div>
   );
