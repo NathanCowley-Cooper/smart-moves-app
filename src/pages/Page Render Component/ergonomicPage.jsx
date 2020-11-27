@@ -2,7 +2,6 @@
 import React, { useEffect, useState } from "react";
 import './../../dist/dist.css';
 import {Link} from 'react-router-dom';
-import ProgressBtn from './../../components/User Authentication/progressBtn';
 
 
 function ErgonomicPage({match}) {
