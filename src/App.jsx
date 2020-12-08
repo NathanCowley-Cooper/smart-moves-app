@@ -16,7 +16,7 @@ import { UserContext } from "./components/User Authentication/userContext";
 import { User } from "./components/User Authentication/user";
 import ErgonomicPage from "./pages/Page Render Component/ergonomicPage";
 import StretchDailyPage from "./pages/Page Render Component/stretchDailyPage";
-import StretchOfficePage from "./pages/Page Render Component/stretchDailyPage";
+import StretchOfficePage from "./pages/Page Render Component/stretchOfficePage";
 
 import HamstringTimerPage from "./pages/Timer Pages/hamstringTimer";
 import SeatForwardTimerPage from "./pages/Timer Pages/seatForwardTimer";

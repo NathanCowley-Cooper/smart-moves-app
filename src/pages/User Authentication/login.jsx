@@ -57,10 +57,10 @@ class Login extends React.Component  {
         <div className="loginUser">{this.setUser}</div>
   
   
-        <a className="facebook-share" href="http://www.facebook.com/sharer.php?u=https://optimistic-sammet-033af5.netlify.app/" style={{textDecoration: 'none' }}>
+        {/* <div className="googleSignUp"  style={{textDecoration: 'none' }}>
           <i className="fab fa-facebook" alt="Icon"></i>
-          <h4>Share app to Facebook</h4>
-        </a>
+          <h4>Login to Google</h4>
+        </div> */}
       </div>
     );
   }
