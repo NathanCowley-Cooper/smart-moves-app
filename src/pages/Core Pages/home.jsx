@@ -25,7 +25,7 @@ function Home() {
         <Route path= "/home/ergonomics">
         <Ergonomic />
         </Route>
-      </Switch>
+      </Switch> 
 
       {/* Return Nav */}
       <Nav />
