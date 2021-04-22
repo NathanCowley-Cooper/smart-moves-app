@@ -1119,7 +1119,7 @@ h1 {
   height: 823px;
   width: 411px;
   border-radius: 15px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05), 0 3px 6px rgba(0, 0, 0, 0.05);
   position: absolute;
   top: 0;
   left: 0;
